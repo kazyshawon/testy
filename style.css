@@ -53,11 +53,14 @@ body .btn-primary:hover{
     border-color: #111;
     border: 1px solid #111 !important;
     
-
 }
 
 
 /* Menu */
+
+.navbar{
+    background-color: #fff;
+}
 .navbar-brand img {
     width: 181px;
     height: auto;
@@ -209,7 +212,7 @@ body .btn-primary:hover{
 .about-image{
     position: relative;
 }
-.about-image img{}
+
 .about-img-text {
     position: absolute;
     right: 71px;
@@ -264,3 +267,56 @@ body .btn-primary:hover{
 .finix-text ul li{
     font-size: 20px;
 }
+
+/* why choose us */
+.finix-text{
+    position: relative;
+}
+.paly-animation-btn {
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	background: #fff;
+	font-size: 60px;
+	text-align: center;
+	line-height: 90px;
+	color: #e73a3e;
+	border-radius: 50%;
+	position: absolute;
+	right: 41%;
+	bottom: 51px;
+}
+.paly-animation-btn:hover{
+    color: #fafafa !important;
+    background-color: #e73a3e !important;;
+    
+    
+}
+.paly-animation-btn::before{
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e73a3e;
+    border-radius: 50%;
+    animation: palybtn 1.6s ease-out infinite;
+}
+@keyframes palybtn{
+    0%,30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* why choose us features-item */
+
